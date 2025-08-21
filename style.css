@@ -92,3 +92,75 @@ nav a:hover {
   font-size: 1rem;
   letter-spacing: 0.5px;
 }
+/* ---- Responsive Media Queries ---- */
+
+/* 📱 Phones (portrait) */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  header h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  nav a {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  #searchBar {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+/* 📱 Phones (landscape) + Small tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  header h1 {
+    font-size: 22px;
+  }
+  nav a {
+    font-size: 13px;
+  }
+}
+
+/* 📲 Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  header h1 {
+    font-size: 26px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+}
+
+/* 💻 Laptops / Desktops */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  header h1 {
+    font-size: 28px;
+  }
+  nav a {
+    font-size: 15px;
+  }
+}
+
+/* 📺 Large Screens / TVs */
+@media (min-width: 1440px) {
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  header h1 {
+    font-size: 34px;
+  }
+  nav a {
+    font-size: 18px;
+  }
+}
